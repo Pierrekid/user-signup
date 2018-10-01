@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Signup</title>
+</head>
+<body>
+    <!-- 1. Create html file that looks like the version. Check it out on the browser
+    
+         2. Create python file that will route tothat same html file to display data-->
+    <h1> Signup</h1>
+    <br>
+
+    <form action='/signup' method="post">
+
+        <label>
+            Username
+            <input type="text" name="Username" value="{{Username}}"> <span>{{Username_error}}</span>
+        </label>
+        <br>
+        <br>
+        <label >
+            Password
+            <input type="password" name="Password" ><span>{{Password_error}}</span>
+        </label>
+        <br>
+        <br>
+        <label >
+            Verify Password
+            <input type="password" name="Verify_password"><span>{{Verify_error}}</span>
+        </label>
+        <br>
+        <br>
+        <label >
+            Email (Optional)
+            <input type="text" name="Email" value="{{Email}}"><span>{{Email_error}}</span>
+        </label>
+        <br>
+        <br>
+        <input type="submit" value="Submit Query">
+
+    </form>
+</body>
+</html>
